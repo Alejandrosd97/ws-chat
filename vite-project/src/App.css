@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 100vh;
+  background-image: url('../public/background.jpg');
+  background-size: cover;
+}
+
+.main-header {
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.main{
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  padding: 20px;
+  border-radius:5px;
+}
+
+.center-container{
+  display: flex;
+  width:100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.room-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.room-options input {
+  padding: 10px;
+  border: 1px solid #555555;
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.room-options input::placeholder {
+  color: #aaaaaa;
+}
+
+.room-options button {
+  background-color: #5dade2;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+.room-options button:hover {
+  background-color: #3498db;
+}
+
+
+dialog[open]{
+  scale : 1;
+  transition :  scale 0.3s ease;
+
+  @starting-style {
+    scale :0.8
+  }
+}
+
+dialog{
+  scale : 0.5;
+  background-color: transparent;
+  border :none;
+}
